@@ -1,4 +1,4 @@
-### App.js ###
+# App.js #
 
 This component is responsible for putting the app together.
 As you can see, it invokes other components that are already on the page.

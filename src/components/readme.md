@@ -1,4 +1,4 @@
-### Components ###
+# Components #
 
 In this folder you will find the components required by the app.
 
@@ -59,7 +59,7 @@ Actions.createdArticle(
 );
 ```
 
-### ArticleList ###
+### ArticleList.js ###
 Renders all the information about Articles. Basically it loops through an array that resides in its current state.
 
 It also listens to the same store as all other component s.
