@@ -44,8 +44,8 @@ When a user creates an article the following is expected:
 1. Fire Actions from main form.
 1. All other components must listen to this action.
 
-### HTML queickstart index.html ###
-The follwing HTML contains the references we will be using to build the app.
+### HTML quick start index.html ###
+The following HTML contains the references we will be using to build the app.
 ```html
 <!DOCTYPE html>
 <html>
