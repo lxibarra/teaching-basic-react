@@ -1,6 +1,18 @@
-var App = React.createClass({
-  render:function() {
-    return (
+/**
+ * Main application is a stateless component it will not manage state on this example.
+ * Each individual component will be responsible for managin its own state.
+ * (we are not using containers)
+ *
+ * We are invoking other components inside our main component
+ *   1. TopBar
+ *   2. Categories
+ *   3. ArticleForm
+ *   4. ArticleList
+ *
+ * @return {JSX}
+ */
+function App() {
+   return (
       <div className="container-fluid">
         <TopBar title="Tech Club"/>
         <div className="row">
@@ -18,7 +30,7 @@ var App = React.createClass({
         </div>
       </div>
     );
-  }
-});
+}
 
+//Mount the main component on the page
 ReactDOM.render(<App/>, document.getElementById('app'));

@@ -1,7 +1,12 @@
 # Learning React #
-## State vs Stateless components
+### State vs Stateless components ###
 
-This is a sample App that allows users to store Articles.
+This app is intended to show/help developers understand how react components work
+and also help identify when to use state or stateless components.
+
+The instructor will walk through the creation of each component and fully explain the why and the how.   
+
+This sample App allows users to store Articles (in memory) using a variation of flux to communicate state changes.
 
 
 ### Before you start ###
