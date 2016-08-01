@@ -1,3 +1,12 @@
+
+/**
+ * Displays a top nav bar and listens to a store to trigger an action
+ * every time an artcile is created.
+ *
+ * When an article is created it updates an anchor tag with the date and time of
+ * the last item created.
+ *
+ */
 var TopBar = React.createClass({
   mixins:[Reflux.listenTo(ArticleStore, "onCreatedArticle")],
   getInitialState:function(){

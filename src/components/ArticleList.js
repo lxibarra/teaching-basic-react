@@ -1,4 +1,8 @@
 
+/**
+ * Listens to a store that triggers an action everytime an article is created.
+ * Updates its state and renders a list of articles.
+ */
 var ArticleList = React.createClass({
    mixins:[Reflux.listenTo(ArticleStore, "onCreatedArticle")],
     getInitialState:function() {

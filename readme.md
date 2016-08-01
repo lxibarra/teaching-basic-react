@@ -9,13 +9,15 @@ The instructor will walk through the creation of each component and fully explai
 This sample App allows users to store Articles (in memory) using a variation of flux to communicate state changes.
 
 
-### Before you start ###
+### Two things before you start ###
 
-We will be using live-server to preview our app make sure you have it on your system.
+1. **Super important note:** This app does not use currently best practices its only purpose is to help developers grasp main react concepts. Once everyone is comfortable with react we will be switching gears and create things as expected ;).  
+
+1. We will be using live-server to preview our app. Make sure you have it on your system.
 ```
   npm install -g live-server
 ```
-to use live-server navigate to your app directory and simply type live-server.
+to use live-server navigate to your app directory and simply type live-server from the command line.
 
 Live server is not mandatory but recommended to quickly preview changes.
 

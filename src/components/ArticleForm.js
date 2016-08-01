@@ -1,5 +1,11 @@
+
+/**
+ * Creates a form and handles the submit event
+ */
 var ArticleForm = React.createClass({
-    //This touches the DOM it is posible but its not the react way
+    //This touches the DOM.
+    // Its possible but its not the react way
+    // for now we can get away with it.
     submitArticle:function(e) {
         e.preventDefault();
         Actions.createdArticle(

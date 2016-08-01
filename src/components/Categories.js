@@ -15,8 +15,8 @@ var CategoryItem = function(props){
 
 
 /**
- * Parent class component that has a internal state. To create DOM changes we need
- * to manually update the state.
+ * Parent class component that renders multiple Category item components
+ * 
  */
 var Categories = React.createClass({
     mixins:[Reflux.listenTo(ArticleStore, "onCreatedArticle")],
