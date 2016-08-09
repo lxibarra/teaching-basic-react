@@ -16,12 +16,29 @@ var CategoryItem = function(props){
 
 /**
  * Parent class component that renders multiple Category item components
- * 
+ *
  */
 var Categories = React.createClass({
-    mixins:[Reflux.listenTo(ArticleStore, "onCreatedArticle")],
+    mixins:[
+      Reflux.listenTo(ArticleStore, "onCreatedArticle"),
+      Reflux.listenTo(ArticleStoreDelete, "onArticleDelete")
+    ],
+    onArticleDelete:function(payload) {
+
+      var items = this.state.items.map((item)=>{
+          if(item.category === payload.item.category) {
+            item.qty--;
+          }
+          return item;
+      });
+      this.setState({
+        items:items.filter(i=>i.qty>0)
+      });
+    },
     onCreatedArticle:function(payload) {
       var items = this.state.items.slice();
+
+
 
       var found = items.find(function(item) {
           if(item.category === payload.category) {

@@ -1,3 +1,4 @@
 var Actions = Reflux.createActions([
-  'createdArticle'
+  'createdArticle',
+  'deleteArticle'
 ]);

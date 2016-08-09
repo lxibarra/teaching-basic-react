@@ -8,11 +8,19 @@
  *
  */
 var TopBar = React.createClass({
-  mixins:[Reflux.listenTo(ArticleStore, "onCreatedArticle")],
+  mixins:[
+    Reflux.listenTo(ArticleStore, "onCreatedArticle"),
+    Reflux.listenTo(ArticleStoreDelete, "onArticleDelete")
+  ],
   getInitialState:function(){
     return {
       lastUpdate:'Never'
     };
+  },
+  onArticleDelete:function(payload) {
+    this.setState({
+      lastUpdate:payload.lastUpdate&&payload.lastUpdate.createdDate.toString()||'Never'
+    });
   },
   onCreatedArticle:function(payload) {
       this.setState({

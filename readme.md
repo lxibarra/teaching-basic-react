@@ -71,3 +71,5 @@ The following HTML contains the references we will be using to build the app.
   </body>
 </html>
 ```
+
+at the end the user must be able to implement delete article and top bar and categories should be updated.
